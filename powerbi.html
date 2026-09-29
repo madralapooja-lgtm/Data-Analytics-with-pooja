@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Power BI | DataPath</title><meta name="description" content="Practical SQL, Data Analytics and Power BI learning resources.">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="topbar">Free learning resources • SQL • Excel • Power BI • Data Analytics</div>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">DP</span>DataPath</a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="notes.html">Notes</a>
+      <a href="sql.html">SQL</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="powerbi.html">Power BI</a>
+      <a href="projects.html">Projects</a>
+      <a href="interview.html">Interview</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero"><div class="container"><div class="breadcrumb">Home / Power BI</div><h1>Power BI</h1><p>Understand the full flow: source → Power Query → model → DAX → report.</p></div></section>
+<section class="section"><div class="container">
+ <div class="grid grid-3">
+  <div class="card"><h3>Power Query</h3><p>Import data, change types, clean columns, merge related tables and append similar tables.</p></div>
+  <div class="card"><h3>Data Modeling</h3><p>Build relationships, understand fact/dimension tables and use a clean star schema.</p></div>
+  <div class="card"><h3>DAX</h3><p>Measures, CALCULATE, FILTER, SUMX, DIVIDE, date intelligence and context.</p></div>
+  <div class="card"><h3>Visuals</h3><p>Cards, tables, bar charts, line charts, slicers and drill-through pages.</p></div>
+  <div class="card"><h3>Dashboard Design</h3><p>Keep hierarchy clear, reduce clutter and make important KPIs easy to scan.</p></div>
+  <div class="card"><h3>Publish & Explain</h3><p>Know your model and be ready to explain each transformation and measure.</p></div>
+ </div>
+</div></section>
+<section class="section"><div class="container"><div class="card"><div class="kicker">Mini DAX library</div><h2>Starter measures</h2><pre class="code" style="white-space:pre-wrap;color:#344054">Total Sales = SUM(Sales[Amount])
+
+Total Orders = DISTINCTCOUNT(Sales[OrderID])
+
+Average Order Value =
+DIVIDE([Total Sales], [Total Orders])
+
+Orders YTD =
+TOTALYTD([Total Orders], 'Calendar'[Date])</pre></div></div></section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><div class="footer-title">DataPath</div><p>Simple, practical learning resources for aspiring data professionals.</p><small>Built as a GitHub Pages static website.</small></div>
+    <div><div class="footer-title">Learn</div><a href="sql.html">SQL & Databases</a><a href="analytics.html">Data Analytics</a><a href="powerbi.html">Power BI</a><a href="projects.html">Projects</a></div>
+    <div><div class="footer-title">Prepare</div><a href="notes.html">Notes</a><a href="interview.html">Interview Prep</a><a href="index.html#roadmap">Roadmap</a></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body></html>

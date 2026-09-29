@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SQL | DataPath</title><meta name="description" content="Practical SQL, Data Analytics and Power BI learning resources.">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="topbar">Free learning resources • SQL • Excel • Power BI • Data Analytics</div>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="logo">DP</span>DataPath</a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="notes.html">Notes</a>
+      <a href="sql.html">SQL</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="powerbi.html">Power BI</a>
+      <a href="projects.html">Projects</a>
+      <a href="interview.html">Interview</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero"><div class="container"><div class="breadcrumb">Home / SQL</div><h1>SQL & Databases</h1><p>Build confidence from basic queries to the patterns commonly used in analytics work.</p><div class="topic-row"><span class="tag">SELECT</span><span class="tag">JOIN</span><span class="tag">GROUP BY</span><span class="tag">CTE</span><span class="tag">Window Functions</span></div></div></section>
+<section class="section"><div class="container">
+ <div class="grid grid-3">
+  <div class="card"><h3>01 · Foundations</h3><p>SELECT, DISTINCT, aliases, WHERE, LIKE, IN, BETWEEN, CASE and ORDER BY.</p><a class="card-link" href="#examples">VIEW EXAMPLE →</a></div>
+  <div class="card"><h3>02 · Aggregation</h3><p>COUNT, SUM, AVG, MIN, MAX, GROUP BY and HAVING.</p><a class="card-link" href="#examples">VIEW EXAMPLE →</a></div>
+  <div class="card"><h3>03 · Joins</h3><p>INNER, LEFT, RIGHT and self-join concepts with practical table relationships.</p><a class="card-link" href="#examples">VIEW EXAMPLE →</a></div>
+  <div class="card"><h3>04 · Intermediate</h3><p>Subqueries, CTEs, UNION/UNION ALL and EXISTS.</p></div>
+  <div class="card"><h3>05 · Window Functions</h3><p>ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD and running totals.</p></div>
+  <div class="card"><h3>06 · SQL Server</h3><p>Views, stored procedures, indexes, triggers and basic database objects.</p></div>
+ </div>
+</div></section>
+<section class="section" id="examples"><div class="container"><div class="section-head"><div><div class="kicker">Practice</div><h2>Example query patterns</h2></div></div>
+<div class="card"><pre class="code" style="white-space:pre-wrap;color:#344054">SELECT customer_id, COUNT(*) AS orders
+FROM orders
+WHERE order_date >= '2026-01-01'
+GROUP BY customer_id
+HAVING COUNT(*) &gt; 2
+ORDER BY orders DESC;</pre></div>
+<div class="callout" style="margin-top:18px"><b>Practice idea:</b> create Customers, Orders and Products tables, insert sample data, then answer 10 business questions using JOIN, GROUP BY and window functions.</div>
+</div></section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><div class="footer-title">DataPath</div><p>Simple, practical learning resources for aspiring data professionals.</p><small>Built as a GitHub Pages static website.</small></div>
+    <div><div class="footer-title">Learn</div><a href="sql.html">SQL & Databases</a><a href="analytics.html">Data Analytics</a><a href="powerbi.html">Power BI</a><a href="projects.html">Projects</a></div>
+    <div><div class="footer-title">Prepare</div><a href="notes.html">Notes</a><a href="interview.html">Interview Prep</a><a href="index.html#roadmap">Roadmap</a></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body></html>
