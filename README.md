@@ -1,28 +1,13 @@
-# DataPath Learning Website
+# DataPath 2.0
+A GitHub Pages-friendly Data Analytics Learning Academy.
 
-A GitHub Pages-ready static website inspired by the clean learning-portal structure of modern educational resource sites.
+Includes: roadmap, SQL/SQL Server, Excel, Power Query, Power BI, DAX, statistics, Python, practice lab, projects, interview preparation by experience, and a personal notes index.
 
-## Files
-- `index.html` — homepage
-- `notes.html` — searchable notes
-- `sql.html` — SQL learning track
-- `analytics.html` — Data Analytics track
-- `powerbi.html` — Power BI track
-- `projects.html` — project ideas
-- `interview.html` — interview preparation
-- `style.css` — all styling
-- `script.js` — mobile menu + notes search
+## GitHub Pages
+Upload every file into the repository root, then Settings → Pages → Deploy from a branch → main → /(root) → Save.
 
-## Publish with GitHub Pages
-1. Create a new public GitHub repository.
-2. Upload all files in this folder to the repository root.
-3. Open **Settings → Pages**.
-4. Under Build and deployment, choose **Deploy from a branch**.
-5. Choose `main` and `/ (root)`.
-6. Save and wait for GitHub Pages to deploy.
-7. Open the generated `https://USERNAME.github.io/REPOSITORY/` address.
+## Personal notes
+Create a `my-notes/` folder and add Markdown files. Link them from `notes.html`.
 
-## Customize
-Search for `DataPath` in the HTML files to change the brand.
-Edit `style.css` to change colors, spacing and typography.
-Add new HTML pages and connect them through the navigation.
+## Static-site limitation
+This version does not execute arbitrary SQL or store private notes/accounts in a database. Those require a backend or external service.
